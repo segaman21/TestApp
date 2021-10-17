@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.testapp.R
-import com.example.testapp.data.Films
+import com.example.testapp.data.model.Films
 import com.example.testapp.databinding.FilmItemBinding
 
 typealias OnClick = (Films) -> Unit

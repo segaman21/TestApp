@@ -6,9 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
-import com.example.testapp.data.Films
+import com.example.testapp.data.model.Films
 import com.example.testapp.databinding.FilmDetailsFragmentBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class FilmDetailsFragment : Fragment() {
     
     companion object {

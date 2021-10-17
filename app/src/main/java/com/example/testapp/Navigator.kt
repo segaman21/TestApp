@@ -1,7 +1,7 @@
 package com.example.testapp
 
-import com.example.testapp.data.Films
+import com.example.testapp.data.model.Films
 
 interface Navigator {
-    fun navigateToDetailsFragment(film:Films)
+    fun navigateToDetailsFragment(film: Films)
 }

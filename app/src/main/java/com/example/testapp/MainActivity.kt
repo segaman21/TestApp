@@ -3,10 +3,12 @@ package com.example.testapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.commit
-import com.example.testapp.data.Films
+import com.example.testapp.data.model.Films
 import com.example.testapp.ui.film_details.FilmDetailsFragment
 import com.example.testapp.ui.main.MainFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity(),Navigator {
     
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -7,15 +7,13 @@ import android.view.ViewGroup
 import androidx.fragment.app.*
 import com.example.testapp.databinding.MainFragmentBinding
 import com.example.testapp.navigator
-import com.example.testapp.requireApp
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class MainFragment : Fragment() {
     private var _binding: MainFragmentBinding? = null
     private val binding get() = _binding!!
-    private val viewModel: FilmsViewModel by viewModels {
-        (requireApp().viewModelFactory)
-    }
+    private val viewModel by viewModels<FilmsViewModel>()
     
     override fun onCreateView(
             inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
